@@ -119,10 +119,10 @@ def main():
 				# Create a dictionary from zip object
 				COMMODITY = dict(zipbObj)
 
-				option0 = st.selectbox( '',('Metalli',''))
+				option0 = st.selectbox( '',('Energia',''))
 				#st.write('You selected:', option0)
 
-				keys_to_extract_comm1 = ['Gold','Copper','Silver','Palladium','Platinum','Aluminum','Zinc','Lead','Nickel','Tin','Copper','Xetra-Gold',
+				keys_to_extract_comm3 = ['Gold','Copper','Silver','Palladium','Platinum','Aluminum','Zinc','Lead','Nickel','Tin','Copper','Xetra-Gold',
 				'MCX Aluminum Mini','MCX Aluminum','MCX Copper','MCX Copper Mini','MCX Gold 1 Kg','MCX Gold Guinea','MCX Gold Mini',
 				'MCX Gold Petal','MCX Gold Petal Del','MCX Lead','MCX Lead Mini','MCX Nickel','MCX Nickel Mini','MCX Silver',
 				'MCX Silver Micro','MCX Silver Mini','MCX Zinc','MCX Zinc Mini',]
@@ -131,7 +131,7 @@ def main():
 				'MCX Cardamom','MCX Cotton','MCX Crude Palm Oil','MCX Kapas','MCX Mentha Oil','MCX Castor Seed','Live Cattle','Lean Hogs','Feeder Cattle',
 				'US Soybean Meal','US Soybeans','US Wheat','US Corn','Oats','London Wheat','Rough Rice','US Soybean Oil']
 
-				keys_to_extract_comm3 = ['Brent Oil','Crude Oil WTI','London Gas Oil','Natural Gas','Heating Oil','Carbon Emissions','Gasoline RBOB','MCX Brent Oil',
+				keys_to_extract_comm1 = ['Brent Oil','Crude Oil WTI','London Gas Oil','Natural Gas','Heating Oil','Carbon Emissions','Gasoline RBOB','MCX Brent Oil',
 				'MCX Crude Oil WTI','MCX Natural Gas']
 
 				COMMODITY_1 = {key: COMMODITY[key] for key in keys_to_extract_comm1}
@@ -140,7 +140,7 @@ def main():
 				def format_func(option0):
 					return COMMODITY[option0]
 
-				if option0 == 'Metalli':
+				if option0 == 'Energia':
 					COMMODITY = COMMODITY_1
 
 				option = st.selectbox("", options=list(COMMODITY.keys()), format_func=format_func)
