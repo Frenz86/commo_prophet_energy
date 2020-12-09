@@ -73,7 +73,7 @@ def main():
 	'''
 	st.markdown(page_bg_img, unsafe_allow_html=True)
 ############################################################
-	"""Simple Login App"""
+##	"""Simple Login App"""
 
 	################ load logo from web #########################
 	from PIL import Image
