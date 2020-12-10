@@ -185,7 +185,7 @@ def main():
 				def format_func(option0):
 					return COMMODITY[option0]
 
-				if option0 == 'Metalli':
+				if option0 == 'Energia':
 					COMMODITY = COMMODITY_1
 				# elif option0 == 'Beni Alimentari':
 				# 	COMMODITY = COMMODITY_2
